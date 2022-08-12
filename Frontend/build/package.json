@@ -1,0 +1,30 @@
+{
+  "name": "v-build",
+  "version": "1.0.0",
+  "description": "A Small Gulp Build System for Dynamic JS and SCSs",
+  "main": "index.js",
+  "scripts": {
+    "build-nm": "./node_modules/gulp-cli/bin/gulp.js",
+    "watch-nm": "./node_modules/gulp-cli/bin/gulp.js watch",
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "keywords": [
+    "GULP",
+    "JS",
+    "SCSS"
+  ],
+  "author": "Maurice Grönwoldt",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "google-closure-compiler": "^20220601.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.48.0",
+    "node-fs-extra": "^0.8.2",
+    "svg-sprite": "^1.5.0"
+  }
+}

@@ -1,0 +1,25 @@
+v-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#main-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+v-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+v-window-spaces {
+  width: 0;
+  position: absolute;
+  height: 0;
+}

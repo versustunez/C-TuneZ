@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+  color: var(--text-color, #fff);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 1.5vh;
+  font-family: 'Inter', sans-serif;;
+}
+
+.hide {
+  display: none !important;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  font-size: 1em;
+  shape-rendering: geometricPrecision;
+  transition: transform .5s cubic-bezier(.22, .61, .36, 1);
+  stroke-width: 5px;
+  text-align: center;
+  margin-right: .5rem;
+
+  &.block {
+    display: block;
+  }
+}

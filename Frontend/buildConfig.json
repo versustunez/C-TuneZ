@@ -1,0 +1,63 @@
+{
+  "src": "$dir/src",
+  "out": "$dir/public/out",
+  "js": [
+    {
+      "name": "app",
+      "minify": true,
+      "onlyMinify": true,
+      "input": "$src/js/",
+      "output": "$out/js/",
+      "watch": "../src/js/**/*.js",
+      "includeFile": "app.path"
+    },
+    {
+      "name": "components",
+      "minify": true,
+      "onlyMinify": true,
+      "input": "$src/js/Components",
+      "output": "$out/js/",
+      "watch": "../src/js/Components/**/*.js",
+      "includeFile": "components.path"
+    },
+    {
+      "name": "wasm",
+      "minify": true,
+      "onlyMinify": true,
+      "compiler": {
+        "warning_level": "QUIET"
+      },
+      "input": "$src/../public/out/ws/",
+      "output": "$out/js/",
+      "watch": "$src/../public/out/ws/TuneZW.js",
+      "files": [
+        "TuneZW.js"
+      ]
+    },
+    {
+      "name": "loader",
+      "minify": true,
+      "onlyMinify": true,
+      "input": "$src/js/",
+      "output": "$out/js/",
+      "watch": "../src/js/**/*.js",
+      "includeFile": "loader.path"
+    }
+  ],
+  "scss": [
+    {
+      "name": "main",
+      "input": "$src/ui/**/*.scss",
+      "output": "$out/ui",
+      "watch": "../src/ui/**/*.scss"
+    }
+  ],
+  "icons": [
+    {
+      "name": "icon-sprite",
+      "input": "$src/icons/",
+      "output": "$out/",
+      "watch": "../src/icons/**/*.svg"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+add_external(
+        app_set_dimensions
+        app_set_lock
+        app_save_config
+        app_restore_config
+        app_toggle_render_gui
+        audio_upload_data
+        audio_data_ready
+        audio_set_max_decibels
+)
+add_sources(WASM_Bridge.cpp)

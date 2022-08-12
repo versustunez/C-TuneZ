@@ -1,0 +1,86 @@
+v-window {
+    background-color: $secondBackground;
+    color: $textColor;
+    height: 100%;
+    width: 100%;
+    max-width: 860px;
+    max-height: 400px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transition: max-height .3s, max-width .3s, transform .3s;
+    box-shadow: $box-shadow-1;
+    overflow: hidden;
+
+    &[resizing] {
+        transition: none;
+    }
+
+    &[focused] {
+        z-index: 1000;
+    }
+}
+
+v-window-header {
+    border-bottom: 1px solid $hoverDark;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}
+
+v-window-headline {
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-shrink: 1;
+    user-select: none;
+}
+
+v-window-header .window-buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    flex-shrink: 0;
+    user-select: none;
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0 4px;
+    }
+}
+
+.window-buttons .button.fullscreen {
+    margin-top: -3px;
+}
+
+v-window[resizing] v-window-header {
+    cursor: move;
+}
+
+v-window[resizing] v-window-content {
+    pointer-events: none;
+}
+
+v-window-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+v-window-resizer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $primary;
+    transform: rotate(45deg) scale(1.7) translate(6px, 0);
+    cursor: se-resize;
+}

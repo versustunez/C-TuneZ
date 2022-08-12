@@ -1,0 +1,28 @@
+$background: var(--bg, #313638);
+$secondBackground: var(--background-darker, #2c2f31);
+$darkBackgroundColor: var(--background-dark, #1b1b1b);
+$transparentDark: var(--transparent-dark, rgba(33, 33, 33, 0.39));
+$navigationBackgroundColor: var(--nav, #222831);
+
+$primary: var(--primary, #349);
+$second: var(--second, #ff0089);
+$active: var(--active, #4dbb5d);
+
+$loader-delay-color: var(--loader-delay-color, rgb(1, 21, 29));
+
+$hoverDark: var(--hover-dark, rgba(0, 0, 0, .6));
+
+$successBorder: var(--success-color, #39ab48);
+$errorBorder: var(--error-border, #a70101);
+$warningBorder: var(--warning-border, #ff7700);
+
+$box-shadow-1: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$box-shadow-2: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+$textColor: var(--text-color, #fff);
+$textColorDarker: var(--text-color-darker, #dcdcdc);
+$textColorDisabled: var(--text-color-disabled, #aaa);
+
+$errorColor: var(--error-color, #f32f32);
+$errorColorBorder: var(--error-color-border, #cf1b1b);
+$validColor: var(--valid-color, #39ab48);

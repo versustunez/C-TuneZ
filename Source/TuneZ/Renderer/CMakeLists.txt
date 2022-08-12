@@ -1,0 +1,10 @@
+add_subdirectory(Buffer)
+add_subdirectory(Framebuffer)
+add_subdirectory(Post-Processing)
+add_sources(
+        Camera.cpp
+        InstanceRenderer.cpp
+        Mesh.cpp
+        Renderer.cpp
+        Shader.cpp
+)

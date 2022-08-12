@@ -1,0 +1,10 @@
+{
+  "shader": [
+    "base.glsl",
+    "texture.glsl",
+    "bloom.glsl",
+    "bloomCombine.glsl",
+    "toneMapping.glsl",
+    "lightPass.glsl"
+  ]
+}

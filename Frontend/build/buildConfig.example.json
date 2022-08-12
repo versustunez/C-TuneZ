@@ -1,0 +1,30 @@
+{
+  "src": "$dir/src",
+  "out": "$dir/public/out",
+  "js": [
+    {
+      "name": "main",
+      "minify": true,
+      "onlyMinify": true,
+      "input": "$src/js/",
+      "output": "$out/js/",
+      "files": [
+        "app.js"
+      ],
+      "compiler": {
+        "compilation_level": "ADVANCED",
+        "warning_level": "VERBOSE",
+        "language_in": "ECMASCRIPT6_STRICT",
+        "language_out": "ECMASCRIPT6_STRICT",
+        "js_output_file": "$name.min.js"
+      }
+    }
+  ],
+  "scss": [
+    {
+      "name": "main",
+      "input": "$src/theme/**/*.scss",
+      "output": "$out/theme/$name"
+    }
+  ]
+}

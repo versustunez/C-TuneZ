@@ -1,0 +1,11 @@
+*.iml
+*.idea/
+*.vim/
+.cache/
+node_modules
+generated/
+cmake-build-debug-emscripten/
+cmake-build-release-emscripten/
+cmake-build-relwithdebinfo-emscripten/
+Build/
+compile_commands.json
